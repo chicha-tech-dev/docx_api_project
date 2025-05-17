@@ -8,9 +8,9 @@ import uuid
 app = FastAPI()
 
 class Contacto(BaseModel):
-    nombre: str
-    email: str
-    telefono: str
+    contact_name: str
+    contact_email: str
+    contact_phone: str
 
 class Payload(BaseModel):
     firm_name: str
