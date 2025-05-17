@@ -13,13 +13,13 @@ class Contacto(BaseModel):
     contact_phone: str
 
 class Highlight(BaseModel):
-    firm_name: str
+    client_name: str
     summary: str
     matter_value: str
     other_info: str
 
 class Payload(BaseModel):
-    client_name: str
+    firm_name: str
     practice_area: str
     location: str
     contactos: List[Contacto]
