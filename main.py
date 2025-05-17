@@ -13,10 +13,16 @@ class Contacto(BaseModel):
     contact_phone: str
 
 class Payload(BaseModel):
-    firm_name: str
+    client_name: str
     practice_area: str
     location: str
     contactos: List[Contacto]
+
+class Highlight(BaseModel):
+    firm_name: str
+    summary: str
+    matter_value: str
+    other_info: str
 
 @app.post("/generar-docx")
 def generar_docx(data: Payload):
